@@ -54,3 +54,4 @@ class Stack {
         cout << "Stack cleared." << endl;
     }
 };
+// TEST
