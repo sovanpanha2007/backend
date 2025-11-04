@@ -1,5 +1,5 @@
 #include <iostream>
-#include "queueArr.hpp"
+// #include "queueArr.hpp"
 #include "queueLinklist.hpp"
 using namespace std;
 
@@ -9,9 +9,11 @@ int main() {
     queue.enqueue(15);
     queue.enqueue(20);
     queue.dequeue();
-    queue.getSize();
-    queue.peek();
-    queue.rar();
+    queue.peak();
+    queue.rare();
+    // queue.getSize();
+    // queue.peek();
+    // queue.rar();
     queue.display();
     return 0;
 }
