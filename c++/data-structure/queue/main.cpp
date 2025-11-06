@@ -10,7 +10,7 @@ int main() {
     queue.enqueue(20);
     queue.dequeue();
     queue.peak();
-    queue.rare();
+    queue.rare();   
     // queue.getSize();
     // queue.peek();
     // queue.rar();

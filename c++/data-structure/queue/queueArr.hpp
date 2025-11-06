@@ -62,4 +62,4 @@ class Queue {
             }
             cout << endl;
         } 
-};
+}   ;
