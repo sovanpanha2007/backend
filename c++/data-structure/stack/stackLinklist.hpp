@@ -33,7 +33,7 @@ class Stack {
     }
     void pop(){
         Node* temp = top;
-        top = top->next;
+        top = top->next; 
         delete temp;
         }
     void display(){

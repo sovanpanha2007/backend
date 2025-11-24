@@ -38,8 +38,10 @@ class Queue {
         void peek(){
             if (isEmpty()){
                 cout << "Underflow" << endl;
-            } else cout << arr[front] << endl;
-
+            } else {
+                int firstIndex = (front + Max) % Max;
+                cout << arr[firstIndex] << endl;
+            }
         }
         void rar(){
             if (isEmpty()){

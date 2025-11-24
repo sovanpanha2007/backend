@@ -7,13 +7,22 @@ int main() {
     Queue queue;
     queue.enqueue(10);
     queue.enqueue(15);
+    
     queue.enqueue(20);
-    queue.dequeue();
+    queue.enqueue(20);
+    queue.enqueue(20);
+    queue.enqueue(20);
+    queue.enqueue(20);
+    queue.enqueue(10);
+    // queue.dequeue();
+    // queue.dequeue();
+    // queue.dequeue();
+    // queue.dequeue();
+    // queue.dequeue();
     queue.peak();
     queue.rare();   
     // queue.getSize();
     // queue.peek();
     // queue.rar();
     queue.display();
-    return 0;
 }
