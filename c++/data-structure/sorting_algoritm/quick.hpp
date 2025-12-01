@@ -2,20 +2,51 @@
 #include <vector>
 using namespace std;
 
-// Quick Sort Implementation
-void quickSort(vector<int>&arr, int low, int high) {
-    int pivot;
+int findMedian(vector<int> &arr, int low, int high) {
+    int mid = low + (high - low) / 2;
+    int a = arr[low], b = arr[mid], c = arr[high];
+    if ((a <= b && b <= c) || (c <= b && b <= a)) return mid;
+    else if ((b <= a && a <= c) || (c <= a && a <= b)) return low;
+    else return high;
+}
 
-    if(arr.size() == 0) {
-        return;
-    }
-    if(low >= high) {
-        return;
-    }
-    pivot = arr[(low + high) / 2];
+int Partition(vector<int> &arr, int low, int high) {
+    int pivotIndex = findMedian(arr, low, high);
+    int pivot = arr[pivotIndex];
+
     int i = low;
     int j = high;
-    vector<int> left(arr.begin(), arr.begin() + pivot); 
-    vector<int> right(arr.begin() + pivot, arr.end());
-    
+
+    while (true) {
+        while (arr[i] < pivot) i++;
+        while (arr[j] > pivot) j--;
+
+        if (i >= j) return i;  // stop when pointers cross
+
+        swap(arr[i], arr[j]);
+        i++;
+        j--;
+    }
+}
+
+void quickSort(vector<int> &arr, int low, int high) {
+    if (low >= high) return;  // correct base case
+
+    int pi = Partition(arr, low, high);
+
+    quickSort(arr, low, pi - 1);
+    quickSort(arr, pi, high);
+}
+
+void print(vector<int> &arr) {
+    cout << "Sorted array: ";
+    for (int x : arr) cout << x << " ";
+    cout << endl;
+}
+
+int main() {
+    vector<int> arr = {1, 3, 4, 2, 7, 5, 8, 6};
+    quickSort(arr, 0, arr.size() - 1);
+    print(arr);
+    return 0;
 }
