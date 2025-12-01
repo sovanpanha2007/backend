@@ -38,7 +38,7 @@ vector<int> merge(const vector<int> left, const vector<int> right) {
     }
     //Displaying merged result
     cout << "Merged result: ";
-    for (const auto& val : result) {
+    for (const auto& val : result) { 
         cout << val << " ";
     }
     cout << endl;
