@@ -44,9 +44,4 @@ void print(vector<int> &arr) {
     cout << endl;
 }
 
-int main() {
-    vector<int> arr = {1, 3, 4, 2, 7, 5, 8, 6};
-    quickSort(arr, 0, arr.size() - 1);
-    print(arr);
-    return 0;
-}
+

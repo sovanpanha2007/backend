@@ -1,6 +1,7 @@
 #include <iostream>
 #include "merge.hpp"
 #include "quick.hpp"
+#include "section.hpp"
 #include <vector>
 using namespace std;
 
@@ -12,9 +13,10 @@ int main(){
     }
     cout << endl;
     // Merge Sort
-    vector<int> sortedArrMerge = mergeSort(arr);
-    cout << "Sorted array using Merge Sort: ";
-    for(int num : sortedArrMerge) {
+    // vector<int> sortedArrMerge = mergeSort(arr);
+    vector<int> sortedArrSection = sectionSort(arr, arr.size());
+    cout << "Sorted array using Sort: ";
+    for(int num : sortedArrSection) {
         cout << num << " "; 
     }
     cout << endl;   
