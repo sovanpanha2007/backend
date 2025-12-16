@@ -13,10 +13,10 @@ int main(){
     }
     cout << endl;
     // Merge Sort
-    // vector<int> sortedArrMerge = mergeSort(arr);
-    vector<int> sortedArrSection = sectionSort(arr, arr.size());
+    vector<int> sortedArrMerge = mergeSort(arr);
+    // vector<int> sortedArrSection = sectionSort(arr, arr.size());
     cout << "Sorted array using Sort: ";
-    for(int num : sortedArrSection) {
+    for(int num : sortedArrMerge) {
         cout << num << " "; 
     }
     cout << endl;   

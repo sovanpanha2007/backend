@@ -60,7 +60,7 @@ vector<int> mergeSort(const vector<int>& arr) {
     cout << "Dividing: ";
     for (const auto& val : left) {
         cout << val << " ";
-    }
+    }   
     cout << endl;
     vector<int> sortLeft = mergeSort(left);
     cout << "Dividing: ";

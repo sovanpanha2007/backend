@@ -13,12 +13,13 @@ int main(){
     return 0;
 }
 
-// int main(){
+// int main()
 //     Stack stack;
 //     stack.push(1);
 //     stack.push(2);
 //     stack.push(3);
-//     stack.pop();
+//     stack.pop();j
 //     stack.display();
 //     return 0;
 // }
+
