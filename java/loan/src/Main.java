@@ -11,5 +11,11 @@ public class Main {
         myCo.addApplication(app2, 300.0,1, ABA); 
         myCo.printContract();
         ABA.displayList();
+        
+        // Test
+        System.out.println("\nF1 -- Primative Copy ");
+        System.out.println("=======================");
+
+        
     }
 }

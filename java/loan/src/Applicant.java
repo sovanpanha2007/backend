@@ -1,11 +1,11 @@
 package loan.src;
 
 public class Applicant {
-    int applicantId;
-    String name;
-    String gender;
-    int salary;
-    int age;
+    String name; 
+    String gender; 
+    int applicantId; 
+    int salary; 
+    int age; 
   public Applicant(String name , String gender , int salary, int age){
       this.name=name;
       this.gender=gender;
