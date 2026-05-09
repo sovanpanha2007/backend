@@ -1,0 +1,5 @@
+Q1: i saw a module type error message. Line: "const http = requrie('http');
+Q2: res.write(): used to respone a chunk of data to a request. res.end() terminate the process and signal/sent to the server that all headers and data have been sent.
+Q3: the process of recieving response will not end.
+Q4: Because we want to communicate via type commonJs
+Q5: use try-catch the error for every request
